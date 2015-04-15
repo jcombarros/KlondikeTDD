@@ -3,8 +3,10 @@ package test;
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
+import java.util.Stack;
 
 import klondike.controllers.MoveDeckWasteController;
+import klondike.entities.Card;
 import klondike.entities.Game;
 
 import org.junit.Before;
@@ -46,7 +48,8 @@ public class MoveDeckWasteControllerTest {
 	
 	@Test
 	public void isDeckTopCardCovered(){
-		
+		Stack<Card> deck = moveDeckWasteController.getDeck();
+		assertFalse(deck.peek().uncovered());
 	}
 	
 }

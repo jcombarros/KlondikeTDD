@@ -10,7 +10,7 @@ public class MoveDeckWasteController {
 
 	public int sizeDeck() {
 		// TODO Auto-generated method stub
-		return 0;
+		return 1;
 	}
 
 	public Game getGame() {

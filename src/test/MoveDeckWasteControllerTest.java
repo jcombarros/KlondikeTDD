@@ -17,7 +17,7 @@ public class MoveDeckWasteControllerTest {
 	
 	@Test
 	public void sizeDeckTest(){
-		
+		assertNotEquals(0, moveDeckWasteController.sizeDeck());
 	}
 	
 	@Test

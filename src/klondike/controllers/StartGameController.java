@@ -35,7 +35,9 @@ public class StartGameController {
 	public ArrayList<Stack<Card>> uncoveredCardStackTableaus() {
 		ArrayList<Stack<Card>> tableaus = new ArrayList<Stack<Card>>();
 		Stack<Card> tableau = new Stack<Card>();
-		tableau.add(new Card());
+		Card card = new Card();
+		card.turnOver();
+		tableau.add(card);
 		for(int i = 0; i<7; i++){
 			tableaus.add(tableau);
 		}

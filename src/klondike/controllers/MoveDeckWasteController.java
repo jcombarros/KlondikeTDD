@@ -7,7 +7,7 @@ import klondike.entities.Card;
 import klondike.entities.Game;
 
 public class MoveDeckWasteController {
-
+	
 	public int sizeDeck() {
 		// TODO Auto-generated method stub
 		return 1;

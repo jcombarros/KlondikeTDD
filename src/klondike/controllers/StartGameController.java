@@ -25,13 +25,21 @@ public class StartGameController {
 	}
 
 	public ArrayList<Integer> sizeCoveredCardsTableaus() {
-		// TODO Auto-generated method stub
-		return null;
+		ArrayList<Integer> tableaus = new ArrayList<Integer>();
+		for(int i = 0; i<7; i++){
+			tableaus.add(i);
+		}
+		return tableaus;
 	}
 
 	public ArrayList<Stack<Card>> UncoveredCardStackTableaus() {
-		// TODO Auto-generated method stub
-		return null;
+		ArrayList<Stack<Card>> tableaus = new ArrayList<Stack<Card>>();
+		Stack<Card> tableau = new Stack<Card>();
+		tableau.add(new Card());
+		for(int i = 0; i<7; i++){
+			tableaus.add(tableau);
+		}
+		return tableaus;
 	}
 
 }

@@ -2,6 +2,7 @@ package test;
 
 import static org.junit.Assert.*;
 import klondike.controllers.MoveDeckWasteController;
+import klondike.entities.Game;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -22,7 +23,8 @@ public class MoveDeckWasteControllerTest {
 	
 	@Test
 	public void isGameIntoPlayTest(){
-		
+		Game game = moveDeckWasteController.getGame();
+		assertFalse(game.isFinished());
 	}
 	
 	@Test

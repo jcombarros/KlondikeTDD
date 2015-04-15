@@ -12,7 +12,7 @@ import org.junit.Test;
 
 
 public class StartGameControllerTest {
-	
+
 	private StartGameController startGameController;
 	
 	@Before

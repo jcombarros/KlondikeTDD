@@ -18,8 +18,11 @@ public class MoveDeckWasteController {
 	}
 
 	public ArrayList<Integer> sizeFoundations() {
-		// TODO Auto-generated method stub
-		return null;
+		ArrayList<Integer> sizeFoundations = new ArrayList<Integer>();
+		for(int i = 0; i<4; i++){
+			sizeFoundations.add(1);
+		}
+		return sizeFoundations;
 	}
 
 	public Stack<Card> getDeck() {

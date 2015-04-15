@@ -1,5 +1,7 @@
 package klondike.controllers;
 
+import java.util.ArrayList;
+
 import klondike.entities.Game;
 
 public class MoveDeckWasteController {
@@ -10,6 +12,11 @@ public class MoveDeckWasteController {
 	}
 
 	public Game getGame() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public ArrayList<Integer> sizeFoundations() {
 		// TODO Auto-generated method stub
 		return null;
 	}

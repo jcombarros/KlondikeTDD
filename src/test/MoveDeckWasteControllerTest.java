@@ -1,6 +1,9 @@
 package test;
 
 import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+
 import klondike.controllers.MoveDeckWasteController;
 import klondike.entities.Game;
 
@@ -29,7 +32,16 @@ public class MoveDeckWasteControllerTest {
 	
 	@Test
 	public void sizeFoundationsTest(){
+		ArrayList<Integer> sizeFoundations = moveDeckWasteController.sizeFoundations();	
+		assertEquals(4, sizeFoundations.size());
 		
+		boolean emptyFoundations = true;
+		for(Integer sizeFoundation : sizeFoundations){
+			if(sizeFoundation.intValue() > 0){
+				emptyFoundations = false;
+			}
+		}
+		assertFalse(emptyFoundations);
 	}
 	
 	@Test

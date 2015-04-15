@@ -14,5 +14,25 @@ public class MoveDeckWasteControllerTest {
 	public void before(){
 		moveDeckWasteController = new MoveDeckWasteController();
 	}
-
+	
+	@Test
+	public void sizeDeckTest(){
+		
+	}
+	
+	@Test
+	public void isGameIntoPlayTest(){
+		
+	}
+	
+	@Test
+	public void sizeFoundationsTest(){
+		
+	}
+	
+	@Test
+	public void isDeckTopCardCovered(){
+		
+	}
+	
 }

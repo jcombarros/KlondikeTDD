@@ -26,8 +26,9 @@ public class MoveDeckWasteController {
 	}
 
 	public Stack<Card> getDeck() {
-		// TODO Auto-generated method stub
-		return null;
+		Stack<Card> deck = new Stack<Card>();
+		deck.add(new Card());
+		return deck;
 	}
 
 }

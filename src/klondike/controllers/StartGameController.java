@@ -32,7 +32,7 @@ public class StartGameController {
 		return tableaus;
 	}
 
-	public ArrayList<Stack<Card>> UncoveredCardStackTableaus() {
+	public ArrayList<Stack<Card>> uncoveredCardStackTableaus() {
 		ArrayList<Stack<Card>> tableaus = new ArrayList<Stack<Card>>();
 		Stack<Card> tableau = new Stack<Card>();
 		tableau.add(new Card());

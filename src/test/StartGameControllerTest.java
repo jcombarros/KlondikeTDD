@@ -43,7 +43,7 @@ public class StartGameControllerTest {
 	@Test
 	public void sizeTableausTest() {
 		ArrayList<Integer> sizeTableaus = startGameController.sizeCoveredCardsTableaus();
-		ArrayList<Stack<Card>> uncoveredCardStackTableaus = startGameController.UncoveredCardStackTableaus();
+		ArrayList<Stack<Card>> uncoveredCardStackTableaus = startGameController.uncoveredCardStackTableaus();
 		
 		assertEquals(7, sizeTableaus.size());
 		assertEquals(7, uncoveredCardStackTableaus.size());

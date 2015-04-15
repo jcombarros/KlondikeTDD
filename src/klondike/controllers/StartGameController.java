@@ -1,6 +1,8 @@
-package klondike;
+package klondike.controllers;
 import java.util.ArrayList;
 import java.util.Stack;
+
+import klondike.entities.Card;
 
 
 public class StartGameController {

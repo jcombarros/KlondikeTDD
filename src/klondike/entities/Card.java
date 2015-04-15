@@ -1,4 +1,4 @@
-package klondike;
+package klondike.entities;
 
 public class Card {
 

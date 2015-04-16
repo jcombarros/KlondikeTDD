@@ -19,8 +19,11 @@ public class MoveWasteTableauController {
 	}
 
 	public Stack<Card> getWaste() {
-		// TODO Auto-generated method stub
-		return null;
+		Stack<Card> deck = new Stack<Card>();
+		Card card = new Card();
+		card.turnOver();
+		deck.add(card);
+		return deck;
 	}
 
 	public ArrayList<Stack<Card>> getTableaus() {

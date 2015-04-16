@@ -71,7 +71,7 @@ public class MoveWasteTableauControllerTest {
 	}
 	
 	@Test
-	public void invalidCardTableauTest(){
+	public void uncoveredCardsStackTableau(){
 		
 	}
 	

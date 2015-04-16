@@ -19,7 +19,7 @@ public class MoveDeckWasteController {
 
 	public ArrayList<Integer> sizeFoundations() {
 		ArrayList<Integer> sizeFoundations = new ArrayList<Integer>();
-		for(int i = 0; i<4; i++){
+		for(int i = 0; i<Game.NUM_FOUNDATIONS; i++){
 			sizeFoundations.add(1);
 		}
 		return sizeFoundations;

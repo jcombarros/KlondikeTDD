@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.Stack;
 
 import klondike.entities.Card;
+import klondike.entities.Game;
 
 
 public class StartGameController {
@@ -14,7 +15,7 @@ public class StartGameController {
 
 	public ArrayList<Integer> sizeFoundations() {
 		ArrayList<Integer> sizeFoundations = new ArrayList<Integer>();
-		for(int i = 0; i<4; i++){
+		for(int i = 0; i<Game.NUM_FOUNDATIONS; i++){
 			sizeFoundations.add(0);
 		}
 		return sizeFoundations;
@@ -26,7 +27,7 @@ public class StartGameController {
 
 	public ArrayList<Integer> sizeCoveredCardsTableaus() {
 		ArrayList<Integer> tableaus = new ArrayList<Integer>();
-		for(int i = 0; i<7; i++){
+		for(int i = 0; i<Game.NUM_TABLEAUS; i++){
 			tableaus.add(i);
 		}
 		return tableaus;
@@ -38,7 +39,7 @@ public class StartGameController {
 		Card card = new Card();
 		card.turnOver();
 		tableau.add(card);
-		for(int i = 0; i<7; i++){
+		for(int i = 0; i<Game.NUM_TABLEAUS; i++){
 			tableaus.add(tableau);
 		}
 		return tableaus;

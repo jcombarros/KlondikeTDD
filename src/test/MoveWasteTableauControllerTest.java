@@ -17,7 +17,7 @@ import klondike.entities.Card;
 import klondike.entities.Game;
 
 public class MoveWasteTableauControllerTest {
-
+	
 	private MoveWasteTableauController moveWasteTableauController;
 	
 	@Before

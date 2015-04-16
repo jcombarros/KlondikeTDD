@@ -1,11 +1,17 @@
 package test;
 
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertTrue;
+
+import java.util.Stack;
 
 import org.junit.Before;
 import org.junit.Test;
 
 import klondike.controllers.MoveWasteTableauController;
+import klondike.entities.Card;
+import klondike.entities.Game;
 
 public class MoveWasteTableauControllerTest {
 	
@@ -24,7 +30,8 @@ public class MoveWasteTableauControllerTest {
 	
 	@Test
 	public void isGameIntoPlayTest(){
-		
+		Game game = moveWasteTableauController.getGame();
+		assertFalse(game.isFinished());
 	}
 	
 	@Test

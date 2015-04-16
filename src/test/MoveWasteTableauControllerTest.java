@@ -9,6 +9,7 @@ import java.util.Stack;
 import org.junit.Before;
 import org.junit.Test;
 
+import klondike.controllers.MoveDeckWasteController;
 import klondike.controllers.MoveWasteTableauController;
 import klondike.entities.Card;
 import klondike.entities.Game;
@@ -36,7 +37,10 @@ public class MoveWasteTableauControllerTest {
 	
 	@Test
 	public void uncoveredCardWasteTest(){
-		
+		MoveDeckWasteController moveDeckWasteController = new MoveDeckWasteController();
+		moveDeckWasteController.moveDeckWaste();
+		Stack<Card> waste = moveWasteTableauController.getWaste();
+		assertTrue(waste.peek().uncovered());
 	}
 	
 	@Test

@@ -31,4 +31,9 @@ public class MoveDeckWasteController {
 		return deck;
 	}
 
+	public void moveDeckWaste() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

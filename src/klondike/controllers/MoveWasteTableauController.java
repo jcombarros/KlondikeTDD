@@ -1,5 +1,6 @@
 package klondike.controllers;
 
+import java.util.ArrayList;
 import java.util.Stack;
 
 import klondike.entities.Card;
@@ -20,6 +21,16 @@ public class MoveWasteTableauController {
 	public Stack<Card> getWaste() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	public ArrayList<Stack<Card>> getTableaus() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public boolean moveWasteTableau(int tableau) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 }

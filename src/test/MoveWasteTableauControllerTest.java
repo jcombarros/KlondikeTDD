@@ -1,9 +1,11 @@
 package test;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertTrue;
 
+import java.util.ArrayList;
 import java.util.Stack;
 
 import org.junit.Before;
@@ -45,7 +47,27 @@ public class MoveWasteTableauControllerTest {
 	
 	@Test
 	public void validCardTableauTest(){
+		MoveDeckWasteController moveDeckWasteController = new MoveDeckWasteController();
+		moveDeckWasteController.moveDeckWaste();
 		
+		Stack<Card> waste = moveWasteTableauController.getWaste();
+		Card wasteCard = waste.peek();
+		
+		ArrayList<Stack<Card>> tableaus = moveWasteTableauController.getTableaus();
+		
+		boolean possibleMove = false;
+		int validTableau = 0;
+		for (Stack<Card> tableau : tableaus) {
+			Card tableauCard = tableau.peek();
+			if(tableauCard.getValue()+1 == wasteCard.getValue() &&
+					!tableauCard.getColor().equals(wasteCard.getColor())){
+				possibleMove = true;
+			}
+		}
+		
+		if(possibleMove){
+			assertTrue(moveWasteTableauController.moveWasteTableau(validTableau));
+		}
 	}
 	
 	@Test

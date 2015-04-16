@@ -72,7 +72,11 @@ public class MoveWasteTableauControllerTest {
 	
 	@Test
 	public void uncoveredCardsStackTableau(){
+		ArrayList<Stack<Card>> tableaus = moveWasteTableauController.getTableaus();
 		
+		for (Stack<Card> tableau : tableaus) {
+			assertTrue(tableau.peek().uncovered());	
+		}
 	}
 	
 

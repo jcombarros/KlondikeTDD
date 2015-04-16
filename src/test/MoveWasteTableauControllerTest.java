@@ -1,5 +1,7 @@
 package test;
 
+import static org.junit.Assert.assertNotEquals;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -16,7 +18,8 @@ public class MoveWasteTableauControllerTest {
 	
 	@Test
 	public void sizeWasteTest(){
-		
+		assertNotEquals(0, moveWasteTableauController.sizeWaste());
+
 	}
 	
 	@Test

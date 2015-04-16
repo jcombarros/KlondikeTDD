@@ -13,13 +13,12 @@ public class Card {
 	}
 
 	public int getValue() {
-		// TODO Auto-generated method stub
-		return 0;
+		return 1;
 	}
 
 	public String getColor() {
 		// TODO Auto-generated method stub
-		return null;
+		return "";
 	}
 
 }

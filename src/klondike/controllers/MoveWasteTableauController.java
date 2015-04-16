@@ -27,8 +27,15 @@ public class MoveWasteTableauController {
 	}
 
 	public ArrayList<Stack<Card>> getTableaus() {
-		// TODO Auto-generated method stub
-		return null;
+		ArrayList<Stack<Card>> tableaus = new ArrayList<Stack<Card>>();
+		Stack<Card> tableau = new Stack<Card>();
+		Card card = new Card();
+		card.turnOver();
+		tableau.add(card);
+		for(int i = 0; i<Game.NUM_TABLEAUS; i++){
+			tableaus.add(tableau);
+		}
+		return tableaus;
 	}
 
 	public boolean moveWasteTableau(int tableau) {

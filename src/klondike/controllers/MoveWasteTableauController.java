@@ -15,7 +15,7 @@ public class MoveWasteTableauController {
 
 	public Game getGame() {
 		// TODO Auto-generated method stub
-		return null;
+		return new Game();
 	}
 
 	public Stack<Card> getWaste() {

@@ -15,7 +15,7 @@ import klondike.entities.Card;
 import klondike.entities.Game;
 
 public class MoveTableauFoundationControllerTest {
-
+	
 	private Game game = new Game();
 	private MoveTableauFoundationController moveTableauFoundationController;
 

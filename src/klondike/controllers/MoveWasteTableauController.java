@@ -25,11 +25,7 @@ public class MoveWasteTableauController {
 	}
 
 	public Stack<Card> getWaste() {
-		Stack<Card> deck = new Stack<Card>();
-		Card card = new Card();
-		card.turnOver();
-		deck.add(card);
-		return deck;
+		return game.getWaste();
 	}
 
 	public ArrayList<Stack<Card>> getTableaus() {

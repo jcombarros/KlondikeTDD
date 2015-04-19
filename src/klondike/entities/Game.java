@@ -96,5 +96,16 @@ public class Game {
 		ArrayList<Integer> sizeTableaus = new ArrayList<Integer>();
 		return sizeTableaus;
 	}
+	
+	public ArrayList<Stack<Card>> uncoveredCardStackTableaus(){
+		Stack<Card> tableau = new Stack<Card>();
+		Card card = new Card();
+		card.turnOver();
+		tableau.add(card);
+		for(int i = 0; i<Game.NUM_TABLEAUS; i++){
+			tableaus.add(tableau);
+		}
+		return tableaus;
+	}
 
 }

@@ -35,15 +35,7 @@ private Game game;
 	}
 
 	public ArrayList<Stack<Card>> uncoveredCardStackTableaus() {
-		ArrayList<Stack<Card>> tableaus = new ArrayList<Stack<Card>>();
-		Stack<Card> tableau = new Stack<Card>();
-		Card card = new Card();
-		card.turnOver();
-		tableau.add(card);
-		for(int i = 0; i<Game.NUM_TABLEAUS; i++){
-			tableaus.add(tableau);
-		}
-		return tableaus;
+		return this.game.uncoveredCardStackTableaus();
 	}
 
 	public ArrayList<Stack<Card>> getFoundations() {

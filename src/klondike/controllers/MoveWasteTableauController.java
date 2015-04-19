@@ -5,7 +5,7 @@ import java.util.Stack;
 
 import klondike.entities.Card;
 import klondike.entities.Game;
-
+ 
 public class MoveWasteTableauController {
 	
 	private Game game;

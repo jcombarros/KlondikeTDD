@@ -20,7 +20,7 @@ public class MoveDeckWasteController {
 	}
 
 	public Game getGame() {
-		return new Game();
+		return game;
 	}
 
 	public ArrayList<Integer> sizeFoundations() {

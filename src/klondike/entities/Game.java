@@ -11,6 +11,8 @@ public class Game {
 	
 	public static int EMPTY_STACK = 0;
 	
+	public static int NUM_CARDS_DECK = 52;
+	
 	private Stack<Card> waste;
 	
 	private Stack<Card> deck;
@@ -86,7 +88,11 @@ public class Game {
 	}
 	
 	public int sizeDeck() {
-		return 24;
+		int numberOfCards = Game.NUM_CARDS_DECK;
+		for(int i = 1; i <= NUM_TABLEAUS; i++){
+			numberOfCards -= i;
+		}
+		return numberOfCards;
 	}
 	
 	public ArrayList<Integer> sizeFoundations() {

@@ -11,7 +11,7 @@ import klondike.entities.Game;
 import org.junit.Before;
 import org.junit.Test;
 
- 
+
 public class StartGameControllerTest {
 
 	private Game game = new Game();

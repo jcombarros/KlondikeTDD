@@ -43,7 +43,16 @@ public class MoveTableauFoundationControllerTest {
 	
 	@Test
 	public void sizeFoundationsTest(){
+		ArrayList<Integer> sizeFoundations = moveTableauFoundationController.sizeFoundations();	
+		assertEquals(4, sizeFoundations.size());
 		
+		boolean fullFoundations = true;
+		for(Integer sizeFoundation : sizeFoundations){
+			if(sizeFoundation.intValue() < 13){
+				fullFoundations = false;
+			}
+		}
+		assertFalse(fullFoundations);
 	}
 	
 	@Test

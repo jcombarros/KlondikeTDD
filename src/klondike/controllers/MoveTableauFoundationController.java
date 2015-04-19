@@ -19,5 +19,9 @@ private Game game;
 	public ArrayList<Integer> sizeTableaus() {
 		return null;
 	}
+
+	public ArrayList<Integer> sizeFoundations() {
+		return null;
+	}
 	
 }

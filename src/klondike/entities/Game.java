@@ -9,6 +9,8 @@ public class Game {
 	
 	public static int NUM_TABLEAUS = 7;
 	
+	public static int EMPTY_STACK = 0;
+	
 	private Stack<Card> waste;
 	
 	private Stack<Card> deck;
@@ -80,7 +82,7 @@ public class Game {
 	}
 	
 	public int sizeWaste() {
-		return 0;
+		return Game.EMPTY_STACK;
 	}
 	
 	public int sizeDeck() {

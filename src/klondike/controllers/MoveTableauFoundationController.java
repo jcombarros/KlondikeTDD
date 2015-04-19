@@ -27,7 +27,11 @@ private Game game;
 	}
 
 	public ArrayList<Integer> sizeFoundations() {
-		return null;
+		ArrayList<Integer> sizeFoundations = this.game.sizeFoundations();
+		for(int i = 0; i<Game.NUM_FOUNDATIONS; i++){
+			sizeFoundations.add(0);
+		}
+		return sizeFoundations;
 	}
 
 	public ArrayList<Stack<Card>> uncoveredCardStackTableaus() {

@@ -1,5 +1,7 @@
 package test;
 
+import static org.junit.Assert.assertFalse;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -18,7 +20,8 @@ public class MoveTableauFoundationControllerTest {
 
 	@Test
 	public void isGameIntoPlayTest(){
-		
+		Game game = moveTableauFoundationController.getGame();
+		assertFalse(game.isFinished());
 	}
 	
 	@Test

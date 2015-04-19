@@ -10,4 +10,8 @@ private Game game;
 		this.game = game;
 	}
 	
+	public Game getGame() {
+		return game;
+	}
+	
 }

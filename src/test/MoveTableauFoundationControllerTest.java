@@ -75,7 +75,7 @@ public class MoveTableauFoundationControllerTest {
 		ArrayList<Stack<Card>> foundations = moveTableauFoundationController.getFoundations();
 		ArrayList<Stack<Card>> tableaus = moveTableauFoundationController.getTableaus();
 		
-		assertEquals(7, foundations.size());
+		assertEquals(4, foundations.size());
 		
 		ArrayList<Card> foundationTopCards = new ArrayList<Card>();
 		for (Stack<Card> foundation : foundations) {

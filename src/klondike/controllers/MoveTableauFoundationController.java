@@ -47,16 +47,15 @@ private Game game;
 	}
 
 	public ArrayList<Stack<Card>> getFoundations() {
-		return null;
+		return this.game.getFoundations();
 	}
 
 	public ArrayList<Stack<Card>> getTableaus() {
-		return null;
+		return this.game.getTableaus();
 	}
 
 	public boolean moveTableauFoundation(int validTableau, int validFoundation) {
-		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 	
 }

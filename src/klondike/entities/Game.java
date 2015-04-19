@@ -60,6 +60,13 @@ public class Game {
 	}
 
 	public ArrayList<Stack<Card>> getFoundations() {
+		Stack<Card> foundation = new Stack<Card>();
+		Card card = new Card();
+		card.turnOver();
+		foundation.add(card);
+		for(int i = 0; i<Game.NUM_FOUNDATIONS; i++){
+			foundations.add(foundation);
+		}
 		return foundations;
 	}
 

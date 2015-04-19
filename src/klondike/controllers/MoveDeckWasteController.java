@@ -32,9 +32,7 @@ public class MoveDeckWasteController {
 	}
 
 	public Stack<Card> getDeck() {
-		Stack<Card> deck = new Stack<Card>();
-		deck.add(new Card());
-		return deck;
+		return game.getDeck();
 	}
 
 	public void moveDeckWaste() {

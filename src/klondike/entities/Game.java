@@ -30,6 +30,8 @@ public class Game {
 	}
 
 	public Stack<Card> getDeck() {
+		deck = new Stack<Card>();
+		deck.add(new Card());
 		return deck;
 	}
 

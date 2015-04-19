@@ -2,7 +2,19 @@ package klondike.entities;
 
 public class Card {
 	
+	private int value;
+	
+	private String color;
+	
+	private String suit;
+	
 	private boolean uncovered = false;
+	
+	public Card(){
+		value = 1;
+		color = "";
+		suit = "";
+	}
 
 	public boolean uncovered() {
 		return uncovered;
@@ -13,16 +25,15 @@ public class Card {
 	}
 
 	public int getValue() {
-		return 1;
+		return value;
 	}
 
 	public String getColor() {
-		// TODO Auto-generated method stub
-		return "";
+		return color;
 	}
 
 	public Object getSuit() {
-		return null;
+		return suit;
 	}
 
 }

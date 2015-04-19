@@ -19,20 +19,15 @@ public class StartGameController {
 	}
 
 	public int sizeWaste() {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.game.sizeWaste();
 	}
 
 	public ArrayList<Integer> sizeFoundations() {
-		ArrayList<Integer> sizeFoundations = new ArrayList<Integer>();
-		for(int i = 0; i<Game.NUM_FOUNDATIONS; i++){
-			sizeFoundations.add(0);
-		}
-		return sizeFoundations;
+		return this.game.sizeFoundations();
 	}
 
 	public int sizeDeck() {
-		return 24;
+		return game.sizeDeck();
 	}
 
 	public ArrayList<Integer> sizeCoveredCardsTableaus() {

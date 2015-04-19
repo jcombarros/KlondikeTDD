@@ -18,6 +18,7 @@ public class Game {
 	private ArrayList<Stack<Card>> foundations;
 
 	public Stack<Card> getWaste() {
+		waste = new Stack<Card>();
 		Card card = new Card();
 		card.turnOver();
 		waste.add(card);

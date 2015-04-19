@@ -78,9 +78,6 @@ public class Game {
 	
 	public ArrayList<Integer> sizeFoundations() {
 		ArrayList<Integer> sizeFoundations = new ArrayList<Integer>();
-		for(int i = 0; i<Game.NUM_FOUNDATIONS; i++){
-			sizeFoundations.add(0);
-		}
 		return sizeFoundations;
 	}
 	

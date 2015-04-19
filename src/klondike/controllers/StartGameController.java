@@ -23,7 +23,11 @@ public class StartGameController {
 	}
 
 	public ArrayList<Integer> sizeFoundations() {
-		return this.game.sizeFoundations();
+		ArrayList<Integer> sizeFoundations = this.game.sizeFoundations();
+		for(int i = 0; i<Game.NUM_FOUNDATIONS; i++){
+			sizeFoundations.add(0);
+		}
+		return sizeFoundations;
 	}
 
 	public int sizeDeck() {

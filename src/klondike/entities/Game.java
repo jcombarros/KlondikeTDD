@@ -67,5 +67,26 @@ public class Game {
 		// TODO Auto-generated method stub
 		return false;
 	}
+	
+	public int sizeWaste() {
+		return 0;
+	}
+	
+	public int sizeDeck() {
+		return 24;
+	}
+	
+	public ArrayList<Integer> sizeFoundations() {
+		ArrayList<Integer> sizeFoundations = new ArrayList<Integer>();
+		for(int i = 0; i<Game.NUM_FOUNDATIONS; i++){
+			sizeFoundations.add(0);
+		}
+		return sizeFoundations;
+	}
+	
+	public ArrayList<Integer> sizeTableaus() {
+		ArrayList<Integer> sizeTableaus = new ArrayList<Integer>();
+		return sizeTableaus;
+	}
 
 }

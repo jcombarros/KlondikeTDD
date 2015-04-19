@@ -7,7 +7,7 @@ import klondike.entities.Game;
 
 
 public class StartGameController {
-	
+
 	private Game game;
 	
 	public StartGameController(Game game){

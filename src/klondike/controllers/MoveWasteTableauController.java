@@ -7,6 +7,8 @@ import klondike.entities.Card;
 import klondike.entities.Game;
 
 public class MoveWasteTableauController {
+	
+	private Game game;
 
 	public int sizeWaste() {
 		// TODO Auto-generated method stub

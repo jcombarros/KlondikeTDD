@@ -8,6 +8,8 @@ import klondike.entities.Game;
 
 public class MoveDeckWasteController {
 	
+	private Game game;
+	
 	public int sizeDeck() {
 		// TODO Auto-generated method stub
 		return 1;

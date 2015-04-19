@@ -7,6 +7,12 @@ import klondike.entities.Game;
 
 
 public class StartGameController {
+	
+	private Game game;
+	
+	public Game getGame(){
+		return this.game;
+	}
 
 	public int sizeWaste() {
 		// TODO Auto-generated method stub

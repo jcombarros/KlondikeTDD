@@ -33,8 +33,8 @@ public class MoveTableauFoundationControllerTest {
 		assertEquals(7, sizeTableaus.size());
 		
 		boolean emptyTableaus = true;
-		for(Integer emptyTableau : sizeTableaus){
-			if(emptyTableau.intValue() > 0){
+		for(Integer sizeTableau : sizeTableaus){
+			if(sizeTableau.intValue() > 0){
 				emptyTableaus = false;
 			}
 		}

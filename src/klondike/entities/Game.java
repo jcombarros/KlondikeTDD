@@ -16,9 +16,15 @@ public class Game {
 	private ArrayList<Stack<Card>> tableaus;
 	
 	private ArrayList<Stack<Card>> foundations;
+	
+	public Game(){
+		waste = new Stack<Card>();
+		deck = new Stack<Card>();
+		tableaus = new ArrayList<Stack<Card>>();
+		foundations = new ArrayList<Stack<Card>>();
+	}
 
 	public Stack<Card> getWaste() {
-		waste = new Stack<Card>();
 		Card card = new Card();
 		card.turnOver();
 		waste.add(card);
@@ -30,7 +36,6 @@ public class Game {
 	}
 
 	public Stack<Card> getDeck() {
-		deck = new Stack<Card>();
 		deck.add(new Card());
 		return deck;
 	}
@@ -40,7 +45,6 @@ public class Game {
 	}
 
 	public ArrayList<Stack<Card>> getTableaus() {
-		tableaus = new ArrayList<Stack<Card>>();
 		Stack<Card> tableau = new Stack<Card>();
 		Card card = new Card();
 		card.turnOver();

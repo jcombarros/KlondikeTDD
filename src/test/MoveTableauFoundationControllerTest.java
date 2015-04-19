@@ -30,7 +30,7 @@ public class MoveTableauFoundationControllerTest {
 	@Test
 	public void sizeTableausTest(){
 		ArrayList<Integer> sizeTableaus = moveTableauFoundationController.sizeTableaus();	
-		assertEquals(4, sizeTableaus.size());
+		assertEquals(7, sizeTableaus.size());
 		
 		boolean emptyTableaus = true;
 		for(Integer emptyTableau : sizeTableaus){

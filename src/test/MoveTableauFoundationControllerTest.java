@@ -2,13 +2,16 @@ package test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
+import java.util.Stack;
 
 import org.junit.Before;
 import org.junit.Test;
 
 import klondike.controllers.MoveTableauFoundationController;
+import klondike.entities.Card;
 import klondike.entities.Game;
 
 public class MoveTableauFoundationControllerTest {
@@ -57,7 +60,14 @@ public class MoveTableauFoundationControllerTest {
 	
 	@Test
 	public void uncoveredCardTableausTest(){
+		ArrayList<Stack<Card>> uncoveredCardStackTableaus = moveTableauFoundationController.uncoveredCardStackTableaus();
 		
+		assertEquals(7, uncoveredCardStackTableaus.size());
+		
+		for (Stack<Card> uncoveredCardsStack : uncoveredCardStackTableaus) {
+			assertEquals(1, uncoveredCardsStack.size());
+			assertTrue(uncoveredCardsStack.peek().uncovered());
+		}
 	}
 	
 	@Test

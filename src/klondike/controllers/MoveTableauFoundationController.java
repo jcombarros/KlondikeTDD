@@ -19,7 +19,11 @@ private Game game;
 	}
 
 	public ArrayList<Integer> sizeTableaus() {
-		return null;
+		ArrayList<Integer> sizeTableaus = this.game.sizeTableaus();
+		for(int i = 0; i<Game.NUM_TABLEAUS; i++){
+			sizeTableaus.add(1);
+		}
+		return sizeTableaus;
 	}
 
 	public ArrayList<Integer> sizeFoundations() {

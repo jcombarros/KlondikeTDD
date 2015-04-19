@@ -15,12 +15,10 @@ public class MoveWasteTableauController {
 	}
 
 	public int sizeWaste() {
-		// TODO Auto-generated method stub
 		return 1;
 	}
 
 	public Game getGame() {
-		// TODO Auto-generated method stub
 		return game;
 	}
 

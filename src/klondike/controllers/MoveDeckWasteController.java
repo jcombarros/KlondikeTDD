@@ -15,7 +15,6 @@ public class MoveDeckWasteController {
 	}
 	
 	public int sizeDeck() {
-		// TODO Auto-generated method stub
 		return 1;
 	}
 
@@ -37,7 +36,6 @@ public class MoveDeckWasteController {
 
 	public void moveDeckWaste() {
 		// TODO Auto-generated method stub
-		
 	}
 
 }

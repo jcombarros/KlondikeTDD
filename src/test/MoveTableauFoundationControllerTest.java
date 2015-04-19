@@ -72,6 +72,35 @@ public class MoveTableauFoundationControllerTest {
 	
 	@Test
 	public void validCardFoundationTest(){
+		ArrayList<Stack<Card>> foundations = moveTableauFoundationController.getFoundations();
+		ArrayList<Stack<Card>> tableaus = moveTableauFoundationController.getTableaus();
 		
+		assertEquals(7, foundations.size());
+		
+		ArrayList<Card> foundationTopCards = new ArrayList<Card>();
+		for (Stack<Card> foundation : foundations) {
+			foundationTopCards.add(foundation.peek());
+		}
+		
+		boolean possibleMove = false;
+		int validTableau = 0;
+		int validFoundation = 0;
+		for (Stack<Card> tableau : tableaus) {
+			validFoundation = 0;
+			Card tableauCard = tableau.peek();
+			for(Card foundationTopCard : foundationTopCards){
+				if((foundationTopCard.getValue()+1) == tableauCard.getValue() &&
+						foundationTopCard.getSuit().equals(tableauCard.getSuit())){
+					possibleMove = true;
+					
+				}
+				validFoundation++;
+			}
+			validTableau++;
+		}
+		
+		if(possibleMove){
+			assertTrue(moveTableauFoundationController.moveTableauFoundation(validTableau, validFoundation));
+		}
 	}
 }

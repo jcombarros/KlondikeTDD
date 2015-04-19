@@ -29,5 +29,18 @@ private Game game;
 	public ArrayList<Stack<Card>> uncoveredCardStackTableaus() {
 		return null;
 	}
+
+	public ArrayList<Stack<Card>> getFoundations() {
+		return null;
+	}
+
+	public ArrayList<Stack<Card>> getTableaus() {
+		return null;
+	}
+
+	public boolean moveTableauFoundation(int validTableau, int validFoundation) {
+		// TODO Auto-generated method stub
+		return false;
+	}
 	
 }

@@ -21,4 +21,8 @@ public class Card {
 		return "";
 	}
 
+	public Object getSuit() {
+		return null;
+	}
+
 }

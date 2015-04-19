@@ -1,5 +1,7 @@
 package klondike.controllers;
 
+import java.util.ArrayList;
+
 import klondike.entities.Game;
 
 public class MoveTableauFoundationController {
@@ -12,6 +14,10 @@ private Game game;
 	
 	public Game getGame() {
 		return game;
+	}
+
+	public ArrayList<Integer> sizeTableaus() {
+		return null;
 	}
 	
 }

@@ -1,6 +1,7 @@
 package test;
 
 import org.junit.Before;
+import org.junit.Test;
 
 import klondike.controllers.MoveTableauFoundationController;
 import klondike.entities.Game;
@@ -15,4 +16,28 @@ public class MoveTableauFoundationControllerTest {
 		moveTableauFoundationController = new MoveTableauFoundationController(game);
 	}
 
+	@Test
+	public void isGameIntoPlayTest(){
+		
+	}
+	
+	@Test
+	public void sizeTableausTest(){
+		
+	}
+	
+	@Test
+	public void sizeFoundationsTest(){
+		
+	}
+	
+	@Test
+	public void uncoveredCardTableausTest(){
+		
+	}
+	
+	@Test
+	public void validCardFoundationTest(){
+		
+	}
 }

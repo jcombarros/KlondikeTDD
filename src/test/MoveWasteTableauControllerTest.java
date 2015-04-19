@@ -18,11 +18,12 @@ import klondike.entities.Game;
 
 public class MoveWasteTableauControllerTest {
 
+	private Game game = new Game();
 	private MoveWasteTableauController moveWasteTableauController;
 	
 	@Before
 	public void before(){
-		moveWasteTableauController = new MoveWasteTableauController();
+		moveWasteTableauController = new MoveWasteTableauController(game);
 	}
 	
 	@Test
@@ -39,7 +40,7 @@ public class MoveWasteTableauControllerTest {
 	
 	@Test
 	public void uncoveredCardWasteTest(){
-		MoveDeckWasteController moveDeckWasteController = new MoveDeckWasteController();
+		MoveDeckWasteController moveDeckWasteController = new MoveDeckWasteController(game);
 		moveDeckWasteController.moveDeckWaste();
 		Stack<Card> waste = moveWasteTableauController.getWaste();
 		assertTrue(waste.peek().uncovered());
@@ -47,7 +48,7 @@ public class MoveWasteTableauControllerTest {
 	
 	@Test
 	public void validCardTableauTest(){
-		MoveDeckWasteController moveDeckWasteController = new MoveDeckWasteController();
+		MoveDeckWasteController moveDeckWasteController = new MoveDeckWasteController(game);
 		moveDeckWasteController.moveDeckWaste();
 		
 		Stack<Card> waste = moveWasteTableauController.getWaste();

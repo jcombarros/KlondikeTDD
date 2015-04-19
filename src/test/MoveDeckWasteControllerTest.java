@@ -14,11 +14,12 @@ import org.junit.Test;
 
 public class MoveDeckWasteControllerTest {
 
+	private Game game = new Game();
 	private MoveDeckWasteController moveDeckWasteController;
 	
 	@Before
 	public void before(){
-		moveDeckWasteController = new MoveDeckWasteController();
+		moveDeckWasteController = new MoveDeckWasteController(game);
 	}
 	
 	@Test

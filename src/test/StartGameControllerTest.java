@@ -6,6 +6,7 @@ import java.util.Stack;
 
 import klondike.controllers.StartGameController;
 import klondike.entities.Card;
+import klondike.entities.Game;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -13,11 +14,12 @@ import org.junit.Test;
 
 public class StartGameControllerTest {
 	
+	private Game game = new Game();
 	private StartGameController startGameController;
 	
 	@Before
 	public void before(){
-		startGameController = new StartGameController();
+		startGameController = new StartGameController(game);
 	}
 
 	@Test

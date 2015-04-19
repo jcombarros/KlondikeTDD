@@ -10,6 +10,10 @@ public class StartGameController {
 	
 	private Game game;
 	
+	public StartGameController(Game game){
+		this.game = game;
+	}
+	
 	public Game getGame(){
 		return this.game;
 	}

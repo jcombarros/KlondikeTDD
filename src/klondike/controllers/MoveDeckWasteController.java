@@ -10,6 +10,10 @@ public class MoveDeckWasteController {
 	
 	private Game game;
 	
+	public MoveDeckWasteController(Game game){
+		this.game = game;
+	}
+	
 	public int sizeDeck() {
 		// TODO Auto-generated method stub
 		return 1;
